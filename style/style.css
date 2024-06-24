@@ -1,0 +1,334 @@
+* {
+    box-sizing:border-box;
+    margin: 0%;
+}
+body{
+  background-image: url(../img/11-2-cloud-png-10.png);
+  background-color: #6fb3bd;
+  background-size:cover;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate; 
+  font-family: 'Aref Ruqaa Ink', serif;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  
+}
+.container{
+  max-width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.img {
+  height: 485px;
+  width: auto;
+  border-radius: 78px;
+  box-shadow: -3px 2px 37px -1px #ffffff;
+  margin-top: 55px;
+  margin-left: 66px;
+  transition: 1s;
+  animation: img 3s forwards ;
+}
+/* img animation */
+@keyframes img{
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(45px)
+  }
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+/* for changing the color of arows */
+a:not([href]):not([tabindex]) {
+  color: #ffffff;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "previous button" to the left */
+.prev{
+  left: 0;
+}
+/* Next & previous buttons On hover */
+.prev:hover, .next:hover {
+  background-color:#5a8189;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  right: 336px;
+  top: 35%;
+  float: left;
+  text-align: center;
+}
+/* name of the prod */
+.name {
+  font-size: 58px;
+  font-family: ui-monospace;
+  color: rgb(164, 218, 228);
+  border-bottom: 5px solid #fff;
+  padding-bottom: 12px;
+}
+/* prod discription */
+.pro_content {
+  font-size: 18px;
+  color: black;
+  direction: rtl;
+}
+.pro_content span {
+  color: black;
+  font-weight: bold;
+  direction: ltr;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #e5e5e6;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* dot active */
+.active, .dot:hover {
+  background-color: #171718;
+  border: 3px solid #f2f2f2;
+}
+/* Fading  */
+.fadee {
+  animation-name: fadee;
+  animation-duration: 1.5s;
+}
+/* Fading animation */
+@keyframes fadee {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* slidein animation for old bro */
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+/* slidein animation */
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+/* responsive media */
+
+/* extra small devices (phones , 424px and down) */
+@media only screen and (max-width:424px){
+  .img {
+    height: 359px;
+    width: auto;
+    border-radius: 78px;
+    box-shadow: -3px 2px 37px -1px #ffffff;
+    margin-top: 55px;
+    margin-left: 18px;
+}
+@keyframes img{
+  0%{
+    transform: none;
+  }
+  100%{
+    transform: none;
+  }
+}
+.text {
+ display: none;
+}
+.dot {
+display: none;
+}
+}
+/* small devices (portrait tablets and larg phones , 425px and up) */
+@media only screen and (min-width:425px) and (max-width:768px){
+  .img {
+    height: 359px;
+    width: auto;
+    border-radius: 60px;
+    box-shadow: -3px 2px 37px -1px #ffffff;
+    margin-top: 55px;
+    margin-left: 56px;
+}
+@keyframes img{
+  0%{
+    transform: none;
+  }
+  100%{
+    transform: none;
+  }
+}
+.name {
+  font-size: 47px;
+  font-family: ui-monospace;
+  color: rgb(0 0 0);
+  border-bottom: 5px solid #fff;
+  padding-bottom: 12px;
+  position: relative;
+  bottom: -279px;
+  left: 328px;
+}
+.dot {
+  display: none;
+}
+.pro_content {
+  display: none;
+}
+}
+/* medium devices (landscape tablets  , 768px and up) */
+@media only screen and (min-width:768px) and (max-width:1025px){
+  .img {
+    height: 359px;
+    width: auto;
+    border-radius: 60px;
+    box-shadow: -3px 2px 37px -1px #ffffff;
+    margin-top: 55px;
+    margin-left: 56px;
+}
+@keyframes img{
+  0%{
+    transform: none;
+  }
+  100%{
+    transform: none;
+  }
+}
+.name {
+  font-size: 40px;
+  font-family: ui-monospace;
+  color: rgb(0, 0, 0);
+  border-bottom: 5px solid #fff;
+  padding-bottom: 12px;
+  position: relative;
+  top: -82px;
+  left: 235px;
+}
+.pro_content {
+  font-size: 20px;
+  font-family: ui-monospace;
+  color: black;
+  position: relative;
+  top: -62px;
+  display: block;
+  left: 236px;
+}
+.dot {
+  display: inline-block;
+  position: relative;
+  bottom: -48px;
+}
+}
+/* larg devices (laptops / disktops , 1024px and down) */
+@media only screen and  (min-width:1025px) and (max-width:1366px) {
+
+  .name {
+    font-size: 48px;
+    font-family: ui-monospace;
+    color: rgb(0, 0, 0);
+    border-bottom: 5px solid #fff;
+    padding-bottom: 12px;
+    position: relative;
+    top: -82px;
+    left: 170px;
+}
+.pro_content {
+  font-size: 20px;
+  font-family: ui-monospace;
+  color: black;
+  position: relative;
+  top: -62px;
+  display: block;
+  left: 175px;
+}
+
+}
+/* extra larg devices (larg laptops / disktops , 1200px and up) */
+@media only screen and (min-width:1367px){
+  .img {
+    height: 440px;
+    width: auto;
+    border-radius: 60px;
+    box-shadow: -3px 2px 37px -1px #ffffff;
+    margin-top: 59px;
+    margin-left: 102px;
+}
+.name {
+  font-size: 59px;
+  font-family: ui-monospace;
+  color: rgb(0, 0, 0);
+  border-bottom: 5px solid #fff;
+  padding-bottom: 12px;
+  position: relative;
+  top: -82px;
+  left: 50px;
+}
+.pro_content {
+  font-size: 23px;
+  font-family: ui-monospace;
+  color: black;
+  position: relative;
+  top: -62px;
+  display: block;
+  left: 47px;
+}
+.dot {
+  display: inline-block;
+  position: relative;
+  bottom: -25px;
+}
+}
+  
+
+
+
+
+
+
+
+
+
+
